@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин готовых шаблонов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation container">
+            <a href="#" class="header-index-logo">
+                <img src="" alt="">
+            </a>
+            <ul class="site-navigation">
+                <li>
+                    <a href="studio.html">Студия</a>
+                </li>
+                <li>
+                    <a href="clients.html">Клиенты</a>
+                </li>
+                <li class="site-navigation-current">
+                    <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <ul class="user-navigation">
+                <a class="cart-link" href="cart.html">Корзина</a>
+            </ul>
+        </nav>
+        <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main class="container">
+        <div class="catalog-columns">
+            <section class="template-filters">
+                <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
+                <form action="https://echo.htnlacademy.ru" method="POST" class="template-filter">
+                    <fieldset class="price">
+                        <legend>Стоимость:</legend>
+                        <div class="price-slider"></div>
+                        <p>
+                            <label for="price-from-id" class="label-price-from">От</label>
+                            <input type="text" name="price-from" id="price-from-id" placeholder="0" class="input-price-from">
+                        </p>
+                        <p>
+                            <label for="price-to-id" class="label-price-to">До</label>
+                            <input type="text" name="price-to" id="price-to-id" placeholder="15000" class="input-price-to">
+                        </p>
+                    </fieldset>
+                    <fieldset class="grid">
+                        <legend>Сетка:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid-group" value="adaptive-grid" id="adaptive-grid-id">
+                                <label for="adaptive-grid-id">Адаптивная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid-group" value="fixed-grid" id="fixed-grid-id">
+                                <label for="fixed-grid-id">Фиксированная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid-group" value="flex-grid" id="flex-grid-id">
+                                <label for="flex-grid-id">Резиновая</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="features">
+                        <legend>Особенности:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="slider" id="slider-id">
+                                <label for="slider-id">Слайдер</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="advantages" id="advantages-id">
+                                <label for="advantages-id">Блок преимуществ</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="news" id="news-id">
+                                <label for="news-id">Новости</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="gallery" id="gallery-id">
+                                <label for="gallery-id">Галерея</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="cart" id="cart-id">
+                                <label for="cart-id">Слайдер</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button filter-button" type="submit">Показать</button>
+                </form>
+            </section>
+            <section>
+                <h2 class="visually-hidden">Список готовых шаблонов</h2>
+                <div class="catalog-sort">
+                    <b>Сортировать:</b>
+                    <ul class="sort-list">
+                        <li class="sort-item-current">
+                            <a href="#">По цене</a>
+                        </li>
+                        <li>
+                            <a href="#">По типу</a>
+                        </li>
+                        <li>
+                            <a href="#">По названию</a>
+                        </li>
+                    </ul>
+                    <p class="sort-buttons">
+                        <button class="sort-button sort-button-down" type="button">
+                            <span class="visually-hidden">От большего к меньшему</span>
+                        </button>
+                        <button class="sort-button sort-button-up">
+                            <span class="visually-hidden">От меньшему к большему</span>
+                        </button>
+                    </p>
+                </div>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        
+                    </li>
+                    <li class="catalog-item"></li>
+                    <li class="catalog-item"></li>
+                    <li class="catalog-item"></li>
+                    <li class="catalog-item"></li>
+                    <li class="catalog-item"></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
