@@ -1,0 +1,50 @@
+.map {
+  padding-top: 80px;
+  position: relative;
+  .container {
+    position: relative;
+  }
+}
+
+.map__info {
+  width: 320px;
+  height: 305px;
+
+  background-color: #ffffff;
+  padding: 50px;
+
+  position: absolute;
+  top: -370px;
+  left: 20px;
+}
+
+.map__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.map__addres,
+.map__tel,
+.map__tel a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.map__addres {
+  margin-bottom: 15px;
+}
+
+.map__tel {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.map__write-us {
+  @include btn(220px, 50px)
+}

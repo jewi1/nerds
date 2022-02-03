@@ -1,0 +1,16 @@
+@mixin btn($width: 240px, $height: 50px, $bgc: #fb565a, $color: #ffffff, $fsz: 16px, $lh: 18px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $width;
+  height: $height;
+  background-color: $bgc;
+
+  border-radius: 3px;
+
+  font-size: $fsz;
+  line-height: $lh;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}

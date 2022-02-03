@@ -1,9 +1,11 @@
-@import "fonts";
-
-body {
-  font-family: Roboto;
-  background: url('@img/wallhaven-2861rm.png') 0 0 no-repeat;
-  span {
-    color: red;
-  }
-}
+@import "_normalize";
+@import "_variables";
+@import "_mixins";
+@import "_fonts";
+@import "_main";
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/products";
+@import "blocks/info";
+@import "blocks/map";
+@import "blocks/footer";
