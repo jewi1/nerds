@@ -31,7 +31,14 @@
 }
 
 .slider__more {
-  @include btn()
+  @include btn();
+  &:hover {
+    background-color: #e74246;
+  }
+  &:active {
+    background-color: #d7373b;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .slider__controls {

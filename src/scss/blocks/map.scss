@@ -46,5 +46,12 @@
 }
 
 .map__write-us {
-  @include btn(220px, 50px)
+  @include btn(220px, 50px);
+  &:hover {
+    background-color: #e74246;
+  }
+  &:active {
+    background-color: #d7373b;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }

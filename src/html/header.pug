@@ -52,7 +52,10 @@ header.header
 			li.header__item
 				a.header__link(href="#") Клиенты
 			li.header__item
-				a.header__link(href="catalog.html") Магазин
+				if isCatalog == true
+					a.header__link.header__link--active(href="catalog.html") Магазин
+				else if isCatalog == false
+					a.header__link(href="catalog.html") Магазин
 			li.header__item
 				a.header__link(href="#") Контакты
 		a.header__cart(href="#") Корзина

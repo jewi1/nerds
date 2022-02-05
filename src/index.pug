@@ -7,6 +7,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/style.min.css")
 		title Nerds
 	body
+		- var isCatalog = false;
 		include html/header
 		main 
 			section.slider
@@ -91,5 +92,21 @@ html(lang="ru")
 						p.map__addres 191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 
 						p.map__tel тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
 						a.map__write-us(href="#") Напишите нам
+			.popup
+				h2.popup__title Напишите нам
+					.popup__cross
+				form.popup__form(action="#")
+					.popup__top
+						.popup__item 
+							label.popup__label(for="name") Ваше имя:
+							input#name.popup__input(type="text", name="name", placeholder="Имя Фамилия")
+						.popup__item 
+							label.popup__label(for="email") Ваш e-mail:
+							input#email.popup__input(type="email", name="email", placeholder="email@example.com")
+					.popup__bottom
+						.popup__item
+							label.popup__label(for="text") Текст письма:
+							textarea#text(name="text", cols="30", rows="10", placeholder="В свободной форме")
+					button.popup__btn(type="submit") Отправить
 		include html/footer
 		script(src="js/app.min.js") 

@@ -32,17 +32,38 @@
 }
 
 .products__link {
-  @include btn(160px, 50px)
+  @include btn(160px, 50px);
+  &:hover {
+    background-color: #e74246;
+  }
+  &:active {
+    background-color: #d7373b;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .products__item:nth-child(2) {
   .products__link {
     background-color: #00ca74;
+    &:hover {
+      background-color: #00bc6c;
+    }
+    &:active {
+      background-color: #00aa62;
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
   }
 }
 
 .products__item:nth-child(3) {
   .products__link {
     background-color: #efc84a;
+    &:hover {
+      background-color: #eab534;
+    }
+    &:active {
+      background-color: #e5a722;
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
   }
 }

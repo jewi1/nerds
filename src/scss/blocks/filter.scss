@@ -42,6 +42,20 @@
   padding-left: 35px;
   position: relative;
   cursor: pointer;
+
+  transition: all 0.2s;
+
+  &::before {
+    transition: all 0.2s;
+  }
+
+  &::after {
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: #000000;
+  }
 }
 
 .filter__grid {
@@ -65,6 +79,14 @@
       transform: translateY(-50%);
       cursor: pointer;
     }
+    &:hover {
+      &::before {
+        border-color: #000000;
+      }
+      &::after {
+        background-color: #000000 !important;
+      }
+    }
   }
 
   input:checked ~ .filter__label::after {
@@ -75,8 +97,10 @@
     background-color: #a6a6a6;
     border-radius: 50%;
     position: absolute;
-    top: 5px;
+    transform: translateY(-50%);
+    top: 50%;
     left: 8px;
+    transition: all 0.2s;
   }
 }
 
@@ -99,6 +123,14 @@
       left: 0;
       transform: translateY(-50%);
       cursor: pointer;
+    }
+    &:hover {
+      &::before {
+        border-color: #000000;
+      }
+      &::after {
+        border-color: #000000 !important;
+      }
     }
   }
 
@@ -185,5 +217,12 @@
 }
 
 .filter__btn {
-  @include btn(260px, 50px, #eeeeee, #000000)
+  @include btn(260px, 50px, #eeeeee, #000000);
+  &:hover {
+    background-color: #dfdfdf;
+  }
+  &:active {
+    background-color: #d5d5d5;
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
 }
