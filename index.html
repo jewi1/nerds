@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1200, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_V=20220204145053">
+    <link rel="stylesheet" href="css/style.min.css?_V=20220205132625">
     <title>Nerds</title>
   </head>
   <body>
@@ -39,7 +39,8 @@
         <ul class="header__list"> 
           <li class="header__item"><a class="header__link" href="#">Студия</a></li>
           <li class="header__item"><a class="header__link" href="#">Клиенты</a></li>
-          <li class="header__item"><a class="header__link" href="catalog.html">Магазин</a></li>
+          <li class="header__item"><a class="header__link" href="catalog.html">Магазин</a>
+          </li>
           <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
         </ul><a class="header__cart" href="#">Корзина</a>
       </div>
@@ -132,6 +133,30 @@
           </div>
         </div>
       </section>
+      <div class="popup">
+        <h2 class="popup__title">Напишите нам
+          <div class="popup__cross"></div>
+        </h2>
+        <form class="popup__form" action="#">
+          <div class="popup__top">
+            <div class="popup__item"> 
+              <label class="popup__label" for="name">Ваше имя:</label>
+              <input class="popup__input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="popup__item"> 
+              <label class="popup__label" for="email">Ваш e-mail:</label>
+              <input class="popup__input" id="email" type="email" name="email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="popup__bottom">
+            <div class="popup__item">
+              <label class="popup__label" for="text">Текст письма:</label>
+              <textarea id="text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </div>
+          </div>
+          <button class="popup__btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </main>
     <footer class="footer"> 
       <div class="container"> 
@@ -155,6 +180,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/app.min.js?_V=20220204145053"> </script>
+    <script src="js/app.min.js?_V=20220205132625"> </script>
   </body>
 </html>
